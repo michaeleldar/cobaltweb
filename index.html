@@ -1,44 +1,64 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum=scale=1" />
-    <title>Orange OS 7</title>
-    <link rel="stylesheet" href="https://michaeleldar.github.io/Orange_OS_7/style/bootstrap.css">
-    <link rel="stylesheet" href="https://michaeleldar.github.io/Orange_OS_7/style/custom.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="/Orange_OS_7/favicon-16x16.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Cobalt!</title>
+    <link rel="stylesheet" href="./out.css">
+    <link rel="icon" href="img/favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js">
+    </script>
+    </script>
+    <title>Cobalt - Catalyst Desktop's Successor</title>
 </head>
 
-<body>
-    <div id="nav">
-        <div class="col-sm nav-align">
-            <h1 id="title">Orange OS 7</h1>
-        </div>
-        <div class="col-sm nav-align">
-            <a href="https://michaeleldar.github.io/Orange_OS_7/index.html"><span class="button">Home</span></a>
-            <a href="https://michaeleldar.github.io/Orange_OS_7/docs/index.html"><span
-                    class="button">Docs</span></a>
-            <a href="https://michaeleldar.github.io/Orange_OS_7/releases.html"><span
-                    class="button">Download as app.</span></a>
-            <a href="https://michaeleldar.github.io/Orange_OS_7/members/members.html"><span
-                    class="button">For members</span></a>
-            <a href="https://michaeleldar.github.io/Orange_OS_7/blog/index.html"><span
-                    class="button">Blog</span></a>
-        </div>
+<body class="bg-gray-900">
+    <div class="flex space-x-2 bg-gray-800/30 backdrop-blur-3xl p-3 w-full text-white" id="nav">
+        <h1 class="text-xl">Cobalt</h1>
+        <a class="text-xl hover:text-emerald-500" href="/docs">Docs</a>
     </div>
-
-    <div class="container">
-        <div class="col-sm-6">
-            <p>
-              Welcome to the Orange OS 7 official website made by <a href="https://scratch.mit.edu/users/applejuiceproduc">@applejuiceproduc</a>.<br>
-              <a href="https://scratch.mit.edu/studios/31229288">Orange OS</a> is a team in the annual competition <a href="https://scratch.mit.edu/users/OSWars7">OS Wars</a>.<br>
-              OS is short for Operating System, like Windows, android and IOS, But our team of developers are making one, from scratch in <a href="https://scratch.mit.edu">scratch</a><br>
-              Go <a href="https://michaeleldar.github.io/Orange_OS_7/list.html">here</a> for the list of members, past and present.
-            </p>
-        </div>
-        <img src="https://michaeleldar.github.io/Orange_OS_7/stage.png">
+    <div id="intro" class="p-2 rounded-b-3xl bg-gray-800/95 backdrop-blur-sm grid m-auto w-fit h-fit">
+        <br>
+        <a href="#download" class="bg-emerald-500 text-2xl text-center text-white p-6 rounded-lg w-full">Get
+            Cobalt</a>
+        <h1 class="text-center text-white text-5xl p-4">Surf the web with the</h1>
+        <br>
+        <h1 class="text-center text-emerald-500 text-2xl p-3">browser of the future</h1>
+        <br>
+        <h1 class="text-center text-white text-4xl p-3">Privacy by design</h1>
+        <br>
+        <p class=" text-center text-white">The Cobalt browser has been designed from the ground up to provide a
+            privacy-focused experience. The only server that Cobalt connects to is the update notifier, with no
+            private information sent.</p>
+        <br>
+        <h1 class="text-center text-white text-4xl p-3">Open Source
+        </h1>
+        <p class=" text-center text-white">All Cobalt code is free and open source for anyone to inspect and review.
+            It is all licensed under MIT and anyone can review all of the code.</p>
+        <br>
+        <h1 class="text-center text-white text-4xl p-3">Modern</h1>
+        <br>
+        <p class=" text-center text-white">Cobalt is based on Electron, which supports almost all features of Chromium
+            with peace of mind. Cobalt also has an elegant user interface with no unnecessary distractions.</p>
     </div>
+    <div id="download" class="animate-fadeIn rounded-lg bg-gray-800/95 backdrop-blur-sm m-auto my-32 max-w-4xl p-8">
+        <h1 class="text-emerald-400 text-1xl sm:text-3xl md:text-4xl mb-4">Cobalt</h1>
+        <hr>
+        <a href="#" target="_blank" class="block font-bold text-2xl mt-8 text-emerald-400 mb-2"
+            id="version-title">Version X.X.X</a>
+        <p class="text-white mb-4 prose" id="desc"></p>
+        <br>
+        <ul class="" id="downloads"></ul>
+        <br>
+        <a class="flex text-xl p-2 bg-emerald-500 hover:bg-emerald-400 w-fit rounded-lg text-white"
+            href="#altdl">
+            <img class="motion-safe:animate-bounce" width="30" height="30" src="img/down.png">Alternate Downloads</a>
+    </div>
+    <div id="altdl" class="animate-fadeIn rounded-lg bg-gray-800/95 backdrop-blur-sm m-auto my-32 max-w-4xl p-8">
+        <h1 class="text-emerald-400 text-1xl sm:text-3xl md:text-4xl mb-4">Alternative Methods</h1>
+        <b class="text-white">Coming soon</b>
+    </div>
+    <script src="./download.js"></script>
 </body>
 
 </html>
